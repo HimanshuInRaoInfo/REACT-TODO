@@ -1,19 +1,14 @@
-import { useState } from 'react'
 import './App.css'
+import { TodoList } from './components/todo-list.component'
 
-function App() {
-  const [count, setCount] = useState(0);
-  const MIN = 0;
-  const MAX = 10;
+function App() {  
 
   return (
     <>
-      <div>
-        <p>{count}</p>
-        {/* <button disabled={count == MIN} onClick={() => { setCount((prev) => prev - 1) }}>decrement</button>
-        <button disabled={count == MAX} onClick={() => { setCount((prev) => prev + 1) }}>increment</button> */}
-        <button onClick={() => { if (count > MIN) { setCount((prev) => prev - 1) } }}>decrement</button>
-        <button onClick={() => { if (count < MAX) { setCount((prev) => prev + 1) } }}>increment</button>
+      <div className='flex w-full h-full flex-col items-start max-w-8 mx-auto'>
+        <h4>Hey Himanshu!</h4>
+        <p>Here is your tasks!</p>
+        <TodoList />
       </div>
     </>
   )

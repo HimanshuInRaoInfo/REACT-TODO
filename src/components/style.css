@@ -1,0 +1,36 @@
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.items-start {
+    align-items: start;
+}
+
+.max-w-8 {
+    max-width: 768px;
+}
+
+.mx-auto {
+    margin: auto;
+}
+
+h4 {
+    margin: 15px 0px 0px 0px;
+}
+
+p {
+    margin: 0px;
+    font-size: 14px;
+}
