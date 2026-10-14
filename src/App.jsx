@@ -5,8 +5,8 @@ function App() {
 
   return (
     <>
-      <div className='flex w-full h-full flex-col items-start max-w-8 mx-auto'>
-        <h4>Hey Himanshu!</h4>
+      <div className='main-section'>
+        <h2>Hey Himanshu!</h2>
         <p>Here is your tasks!</p>
         <TodoList />
       </div>

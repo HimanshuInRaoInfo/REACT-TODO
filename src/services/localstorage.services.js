@@ -23,11 +23,11 @@ export const localStorageService = {
                 return;
             }
             try {
-                let setValue = window.localStorage.setItem(key, JSON.stringify(JSON.parse(value)));
+                let setValue = window.localStorage.setItem(key, JSON.stringify(value));
                 return setValue;
             }
             catch (error) {
-                console.log("Error while getting storage item", key, error);
+                console.log("Error while set storage item", key, error);
                 return null;
             }
         }

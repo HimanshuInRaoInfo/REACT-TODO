@@ -1,36 +1,86 @@
-.flex {
+.main-section {
     display: flex;
-}
-
-.flex-col {
     flex-direction: column;
+    width: 768px;
+    margin: 10px auto;
+    align-items: flex-start;
 }
 
-.w-full {
-    width: 100%;
-}
-
-.h-full {
-    height: 100%;
-}
-
-.items-start {
-    align-items: start;
-}
-
-.max-w-8 {
-    max-width: 768px;
-}
-
-.mx-auto {
-    margin: auto;
-}
-
-h4 {
-    margin: 15px 0px 0px 0px;
+h2 {
+    margin: 10px 0px 5px 0px;
 }
 
 p {
     margin: 0px;
     font-size: 14px;
+}
+
+.header-actions {
+    margin: 10px 0px;
+    border-top: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.header-actions p {
+    margin: 10px 0px;
+    font-size: 16px;
+}
+
+.header-actions input,
+.header-actions textarea {
+    width: auto;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    outline: none;
+}
+
+.header-actions button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: black;
+    font-size: 16px;
+    border-radius: 10px;
+    outline: none;
+    background-color: white;
+}
+
+.task-section {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 3px;
+    border: 1px solid rgb(184, 183, 183);
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+.task-section h3 {
+    color: white;
+    font-size: 22px;
+    margin: 10px 0px;
+}
+
+.task-section p {
+    font-size: 16px;
+    margin: 5px 0px;
+    color: gray;
+}
+
+.task-list {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    margin: 10px 0px;
+    max-height: calc(100vh - 38vh);
+    overflow-y: auto;
 }
